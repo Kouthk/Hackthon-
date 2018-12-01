@@ -1,0 +1,31 @@
+/* Fone já em uso por padrão, pelo framework
+font-family: 'Roboto', sans-serif;
+*/
+#map {
+        height:90%;
+}
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+}
+
+.fixed-action-btn {
+    right: 60pt;
+}
+.modal {
+   max-height: 100%;
+   max-width: 100%;
+ }
+
+.map2{
+  width:100px;
+  height:100px;
+  overflow: hidden;
+}
+
+.modalMakerBonitinho{
+  padding:2px;
+  border: 2px solid purple;
+  border-radius: 5px;
+}

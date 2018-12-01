@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Ferramenta para universitários que buscam onde morar próximo à faculdade, ou que querem anunciar suas vagas!" />
+	<title>Morar</title>
+	<!-- Materialize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+		<!-- Mapbox a api do mapiinha (: -->
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+      <nav class=" blue-grey darken-4">
+        <div class="nav-wrapper container">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo center"></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Teste</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="faq.html"> Teste</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="waves-effect waves-light btn modal-trigger blue-grey darken-3" data-target="registro">Registrar</a></li>
+            <li><a class="waves-effect waves-light btn modal-trigger blue-grey darken-3" data-target="logar">Entrar</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+      <li><a class="nav-link-side sidenav-close">Inicio</a></li>
+      <li><a class="nav-link-side sidenav-close"></a></li>
+      <li><a class="nav-link-side sidenav-close" href="faq.html"></a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect waves-light btn modal-trigger deep-purple lighten-3" data-target="registro">Registrar</a></li>
+      <li><a class="waves-effect waves-light btn modal-trigger deep-purple lighten-3" data-target="logar">Entrar</a></li>
+
+   </ul>
+
+	 <!-- Modal modal para cadastro -->
+	 <div id="registro" class="modal">
+	     <div class="modal-content">
+	         <div class="row center">
+	             <form action="post" class="col s12">
+	                 <div class="row">
+	                     <div class="input-field col s6">
+	                         <input  id="usuario_registro" type="text" class="validate">
+	                         <label for="usuario_registro">Usuário</label>
+	                     </div>
+	                     <div class="input-field col s6">
+	                         <input  id="senha_registro" type="password" class="validate">
+	                         <label for="senha_registro">Senha</label>
+	                     </div>
+	                     <div class="input-field col s12">
+	                         <input  id="nome_completo" type="text" class="validate">
+	                         <label for="nome_completo">Nome Completo</label>
+	                     </div>
+	                     <div class="input-field col s6">
+	                         <input  id="Numero_celular" type="text" class="validate">
+	                         <label for="Numero_celular">Celular</label>
+	                     </div>
+											 <div class="input-field col s6">
+													<input  id="pais" type="text" class="validate">
+													<label for="pais">País</label>
+											</div>
+											 <div class="input-field col s6">
+	                         <input  id="UF" type="text" class="validate">
+	                         <label for="UF">Estado</label>
+	                     </div>
+	                     <div class="input-field col s6">
+	                         <input  id="cidade" type="text" class="validate">
+	                         <label for="cidade">Cidade</label>
+	                     </div>
+
+	                     <p>
+	                         <label>
+	                             <input type="checkbox" />
+	                             <span>Aceito os termos e condições de uso </span>
+	                         </label>
+	                     </p>
+	                 </div>
+	                 <a class="waves-effect waves-light btn deep-purple lighten-3" href="#" >Criar Conta</a>
+	             </form>
+	         </div>
+	     </div>
+	 </div>
+
+	 <!-- Modal para o usuario dar aquela logadinha supimpa -->
+	 <div id="logar" class="modal">
+	     <div class="modal-content">
+	         <div class="row center">
+	             <form action="post" class="col s12">
+	                 <div class="row">
+	                     <div class="input-field col s12">
+	                         <input  id="usuario_login" type="text" class="validate">
+	                         <label for="usuario_login">Usuário</label>
+	                     </div>
+	                     <div class="input-field col s12">
+	                         <input  id="senha_login" type="password" class="validate">
+	                         <label for="senha_login">Senha</label>
+	                     </div>
+	                 </div>
+	                 <a class="waves-effect waves-light btn deep-purple lighten-3" href="#">Entrar</a>
+	             </form>
+	         </div>
+	     </div>
+	 </div>
+	 <!-- mais coisas sobre a api do mapinha -->
+ 	 <div id='map'></div>
+	<!-- modal para adicionar para adicionar vagas-->
+	<div id="adicionarVaga" class="modal">
+			<div class="modal-content">
+					<div class="row center">
+						<h4 class="flow-text">Insira os dados da sua vaga </h4>
+							<form action="post" class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+												<input  id="tituloImovel" type="text" class="validate">
+												<label for="tituloImovel">Titulo do anuncio ou nome da republica</label>
+										</div>
+										 <div class="input-field  col s12 m5 l4" >
+											 <select id="tipoMoradia">
+												   <option value="" disabled selected>Escolha uma opção</option>
+													 <option value="1">republica mista</option>
+													 <option value="2">republica masculina</option>
+													 <option value="3">republica feminina</option>
+													 <option value="4">Casa</option>
+													 <option value="4">Kitnet</option>
+													 <option value="4">apartamento</option>
+													 <option value="4">Outro</option>
+											 </select>
+											 <label>Tipo de moradia</label>
+										<!-- preciso personalizar isso, socorro-->
+									</div>
+									<div class="input-field col s12 m5 l4">
+											<input  id="valor_aluguel" type="text" class="validate">
+											<label for="valor_aluguel">Valor total</label>
+									</div>
+									<div class="input-field col s12 m5 l4">
+											<input  id="contato" type="text" class="validate">
+											<label for="contato">Numero para contato</label>
+									</div>
+									<div class="input-field col s12">
+										<textarea id="descricaoImovel" class="materialize-textarea"></textarea>
+          					<label for="descricaoImovel">Descrição</label>
+									</div>
+									<div class="input-field col s6 m4 l3">
+											<input  id="vl_longitude" type="text" class="validate">
+											<label for="vl_longitude">Longitude</label>
+									</div>
+									<div class="input-field col s6 m4 l3">
+											<input  id="vl_latitude" type="text" class="validate">
+											<label for="vl_latitude">Latidude</label>
+									</div>
+									 <div class="file-field input-field col s12 m4 l6">
+       			 					<div class="btn-small deep-purple lighten-4">
+								         <span><i class="material-icons right">collections</i> Anexar imagens</span>
+         			 							<input type="file" multiple >
+       								</div>
+       						<div class="file-path-wrapper">
+         							<input class="file-path validate" type="text" placeholder="Upload one or more files">
+       						</div>
+     						</div>
+             </div>
+					</div>
+			  		<div class="center-align">
+									<a class=" modal-action modal-close waves-effect waves-light btn deep-purple lighten-2" href="#">Cadastrar vaga</a>
+						</div>
+							</form>
+					</div>
+			</div>
+
+	<!--Esse botão vai aparecer o tempo todo, mas em teoria é pra aparecer só quando o suario estiver logado -->
+	<div id="usuario_logado" class="fixed-action-btn ">
+					<a class="btn-floating  btn modal-trigger blue-grey darken-3 tooltipped" data-position="left" data-tooltip="" data-target="adicionarVaga">
+							<i class="large material-icons">add</i>
+					</a>
+ </div>
+
+
+
+	<!-- Materialize JS -->
+
+		<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtY5Q2YgTcoWMb0xq6D8NaeTXF7AsPyUM&libraries=visualization">
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<!-- jquery -->
+	<!-- <script src="./lib/js/jquery-3.3.1.min.js"></script> -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
