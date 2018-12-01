@@ -1,0 +1,108 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#pageA {
+    background:#fff;
+    width: 100vw;
+    height: 100vh;
+}
+
+#pageB {
+    background:#e6ecf7;
+    width: 100vw;
+    height: 60vh;
+}
+
+#pageC {
+    background:#fff;
+    width: 100vw;
+    height: 50vh;
+}
+
+#pageD {
+    background:#fff;
+    width: 100vw;
+    height: 100vh;
+}
+
+#pageE {
+    background:#fff;
+}
+
+#btnRes {
+    width: 100%;
+    margin-top: 10pt;
+}
+
+button {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+
+.brand-logo {
+    margin-top: 7pt;
+}
+
+.col .responsive-img {
+    width: 50vw;
+    height: 50vh;
+}
+
+.imgtst {
+    width: 250px;
+    height: 150px;
+}
+
+.imgparceiros {
+    width: 250px;
+    height: 150px;
+}
+
+footer {
+    height: 10vh;
+}
+
+#modal1 {
+    width: 60%;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+ }
+
+ #btnTopo {
+     z-index: 5;
+ }
+
+ .carousel a {
+    color: black;
+ }
+
+ .img_responsive {
+     width: 93%;
+ }
+
+ @media only screen and (max-width: 800px) {
+    #pageB {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #pageA {
+        height: 165vh;
+    }
+}
+
+.description {
+    margin-top: 15pt;
+    margin-bottom: 10pt;
+}
