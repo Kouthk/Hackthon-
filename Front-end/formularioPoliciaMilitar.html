@@ -1,10 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Formulario Policia Militar </title>
-  </head>
-  <body>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Acidente de Trânsito sem vítimas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/libs/materialize-stepper.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/mammo.css" />
+  <link rel="stylesheet" type="text/css" href="./css/sidenav.css" />
+</head>
+<body class="sidenavmin">
+  <!-- MobileThings -->
+  <div class="mobile-nav-wrapper"><i id="amburgMobile" class="material-icons">menu</i></div>
+  <div class="opacityDiv"></div>
+  <!-- EndMobile-->
+  <div class="center">
+    <h1>Relatório de Ocorrência</h1>
+  </div>
+  <div class="container">
+    <ul class="stepper linear">
+      <li class="step active">
+        <div class="step-title waves-effect">Dados da ocorrência</div>
+        <div class="step-content">
+          <div class="row">
+              <div class="input-field col s12 m6">
+                   <select> 
+                      <option value="" disabled selected>Selecione o ocorrência</option> 
+                      <option value="1">Via Pública</option> 
+                      <option value="2">Garagem Coletiva de prédio</option> 
+                      <option value="3">Estacionamento com vigilância</option> 
+                      <option value="4">Estacionamento público</option> 
+                      <option value="5">Estacionamento particular</option> 
+                      <option value="6">Garagem ou abrigo de residência</option> 
+                      <option value="7">Veículo em movimento</option> 
+                      <option value="8">Outros</option> 
+                    </select>   
+                  <label>Local do fato</label>
+                </div>
+            <div class="input-field col s12 m3">
+                <input id="dataDoFato" type="text" class="datepicker">
+                <label for="dataDoFato">Data do fato</label>
+            </div>
+            <div class="input-field col s12 m3">
+                <input id="horaDoFato" type="text" class="timepicker">
+                <label for="horaDoFato">Hora do fato</label>
+            </div>
+            
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="descricaoDoFato" class="materialize-textarea" data-length="120"></textarea>
+                  <label for="descricaoDoFato">Descrição do fato</label>
+                </div>
+              </div>
+          </div>
 
-  </body>
-</html>
+          <div class="step-actions">
+              <button class="waves-effect waves-dark btn next-step">Continuar</button>
+              <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
+          </div>
+            
+      </li>
+      
+      <li class="step ">
+          <div class="step-title waves-effect">Localizacao do acidente</div>
+          <div class="step-content">
+            <div class="row">
+               
+                <div class="input-field col s12 m3">
+                    <input id="Bairro" type="text">
+                    <label for="Bairro">Bairro</label>
+                </div>
+
+                <div class="input-field col s12 m3">
+                    <input id="Complamento" type="text">
+                    <label for="Referencia">Bairro</label>
+                </div>
+           
+            </div>
+  
+                <div class="step-actions">
+                  <button class="waves-effect waves-dark btn next-step">Continuar</button>
+                  <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
+                </div>
+            
+     </li>
+
+    </div>
+      <!-- Modal Structure -->
+      <div id="modal_confirmacao" class="modal center">
+        <div class="modal-content">
+          <h4>Deseja finalizar a visita?</h4>
+        </div>
+        <a href="upload.html" class="waves-effect waves-dark btn center">Sim</a>
+        <a href="#!" class="modal-close waves-effect waves-light red btn center">Não</a>
+      </div>
+      <!-- sideNav -->
+      <div class="sidenav2" id="sidenav">
+          <ul>
+            <li>
+                <a href="logged.html">
+                    <i class="material-icons">home</i>
+                    <span>Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons">search</i>
+                    <span>Busca</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="formularioSamu.html">
+                    <i class="material-icons">assignment
+</i>
+                    <span>Formulario Samu</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons ">assignment
+</i>
+                    <span>Formulario Setrat</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons">assignment
+</i>
+                    <span>Formulario Policia Militar</span>
+                </a>
+            </li>
+              <li>
+                  <a href="#" class="dropdown-trigger" data-target='dropdown'>
+                      <img class="circle" src="imgs/nature.jpeg">
+                  </a>
+                  <ul id='dropdown' class='dropdown-content #fafafa grey lighten-5'>
+                      <li><a href="edit_profile.html">Editar Perfil</a></li>
+                      <li><a href="index.html">Sair</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <a href="#" id="sidenav-btn" class="sidenav-btn"><<</a>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+      <script src="./js/libs/materialize-stepper.min.js"></script>
+      <script src="./js/mammo.js"></script>
+      <script src="./js/sidenav.js"></script>
+    </body>
+    </html>
