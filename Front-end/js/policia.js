@@ -17,6 +17,7 @@ function gravar() {
     let longitude = document.querySelector('#longitude');
     let cep = document.querySelector('#cep');
     let dataDoFato = document.querySelector('#dataDoFato');
+    let horaDoFato = document.querySelector('#horaDoFato');
     // let indice = document.querySelector('#localDoFato').selectedIndex;
     // let localDoFato = document.querySelector('#localDoFato').children[indice].value;
 
@@ -24,6 +25,7 @@ function gravar() {
         geo = {
             cep: [],
             dataDoFato: [],
+            horaDoFato: [],
             latitude: [],
             longitude: []
         }
@@ -59,4 +61,6 @@ function showPosition(position) {
     lat.value =  position.coords.latitude; 
     long.value = position.coords.longitude;
 }
+
+
 
