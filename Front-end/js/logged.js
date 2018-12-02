@@ -12,17 +12,3 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems);
   });
-
-
-
-document.getElementById("editarDownloadMama").onclick = function() {
- sessionStorage.setItem('opcaoEscolhida','1');
-};
-
-document.getElementById("editarDowloadsMamografiaTireoide").onclick = function() {
-sessionStorage.setItem('opcaoEscolhida','1');
-};
-
-document.getElementById("editarDownloadTermografia").onclick = function() {
-sessionStorage.setItem('opcaoEscolhida','1');
-};
