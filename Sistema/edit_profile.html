@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/edit_profile.css" />
+    <link rel="stylesheet" type="text/css" href="./css/sidenav.css" />
+</head>
+<body class="sidenavmin">
+    <!-- MobileThings -->
+    <div class="mobile-nav-wrapper"><i id="amburgMobile" class="material-icons">menu</i></div>
+    <div class="opacityDiv"></div>
+    <!-- EndMobile-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center">
+                <h1 class="flow-text">Editar o Perfil do Usuário</h1>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row">
+            <form action="#" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6 m3 offset-m3">
+                        <input value="Username" id="nome" type="text" class="validate">
+                        <label for="nome">Nome de Usuário</label>
+                    </div>
+                    <div class="input-field col s6 m3">
+                        <input value="Username" id="senha" type="password" class="validate">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="input-field col s6 offset-m3">
+                        <select>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="2">Funcionario Policia Militar</option>
+                            <option value="3">Funcionario Samu</option>
+                            <option value="4">Funcionario Setrat</option>
+                        </select>
+                        <label>Tipo de usuário</label>
+                    </div>
+                    <div class="input-field col s6 offset-m3">
+                        <input value="Usuário Fulano" id="last_name" type="text" class="validate">
+                        <label for="last_name">Nome</label>
+                    </div>
+                    <div class="input-field col s6 m3 offset-m3">
+                        <input value="Endereço" id="last_name" type="text" class="validate">
+                        <label for="last_name">Endereço</label>
+                    </div>
+                    <div class="input-field col s6 m3">
+                        <input value="Cuiabá" id="last_name" type="text" class="validate">
+                        <label for="last_name">Cidade</label>
+                    </div>
+                    <div class="input-field col s6 m6 offset-m3">
+                        <input value="Brasil" id="last_name" type="text" class="validate">
+                        <label for="last_name">Pais</label>
+                    </div>
+                </div>
+            </form>
+            <div class="center">
+                <a class="waves-effect waves-light btn">Save</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- sideNav -->
+     <div class="sidenav2" id="sidenav">
+            <ul>
+                <li>
+                    <a href="logged.html">
+                        <i class="material-icons">home</i>
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">search</i>
+                        <span>Busca</span>
+                    </a>
+                </li>
+
+                    <a href="#">
+                        <i class="material-icons">assignment
+</i>
+                        <span>Formulario Samu</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons ">assignment
+</i>
+                        <span>Formulario Setrat</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons">assignment
+</i>
+                        <span>Formulario Policia Militar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-trigger" data-target='dropdown'>
+                        <img class="circle" src="imgs/nature.jpeg">
+                    </a>
+                    <ul id='dropdown' class='dropdown-content #fafafa grey lighten-5'>
+                        <li><a href="edit_profile.html">Editar Perfil</a></li>
+                        <li><a href="index.html">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" id="sidenav-btn" class="sidenav-btn"><<</a>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="./js/edit_profile.js"></script>
+    <script src="./js/sidenav.js"></script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/libs/materialize-stepper.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/mammo.css" />
+  <link rel="stylesheet" type="text/css" href="./css/sidenav.css" />
+</head>
+<body class="sidenavmin">
+  <!-- MobileThings -->
+  <div class="mobile-nav-wrapper"><i id="amburgMobile" class="material-icons">menu</i></div>
+  <div class="opacityDiv"></div>
+  <!-- EndMobile-->
+  <div class="center">
+    <h1>Relatório de Ocorrencias</h1>
+  </div>
+  <div class="container">
+    <ul class="stepper linear">
+      <li class="step active">
+        <div class="step-title waves-effect">Descrição</div>
+        <div class="step-content">
+          <div class="row">
+            <div class="input-field col s12 m4">
+              <textarea id="descricao_mamografia" name="descricao_mamografia" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="Data">Data :</label>
+            </div>
+            <div class="input-field col s12 m4">
+              <textarea id="" name="horarioSamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="horarioSamu">Horario :</label>
+            </div>
+            <div class="input-field col s12 m4">
+              <textarea id="" name="vtrSamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="vtrSamu">VTR :</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <textarea id="" name="nomeSamu" type="text" class="materialize-textarea" data-length="60" required></textarea>
+              <label for="nomeSamu">Nome :</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <textarea id="" name="idadeSamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="idadeSamu">Idade :</label>
+            </div>
+            <div class="input-field col s12">
+              <select required>
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+              </select>
+              <label>Sexo:</label>
+            </div>
+            <div class="input-field col s8 m10">
+              <textarea id="" name="enderecoSamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="enderecoSamu">Endereço :</label>
+            </div>
+            <div class="input-field col s4 m2">
+              <textarea id="" name="Nsamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="NSamu">Nº :</label>
+            </div>
+            <div class="input-field col s12 m12">
+              <textarea id="" name="bairroSamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="BairroSamu">Bairro :</label>
+            </div>
+            <div class="input-field col s12 m12">
+              <textarea id="" name="municipioSamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+              <label for="municipioSamu">municipio :</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <select>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="1">Cardiologia</option>
+                <option value="2">Obstetrícia</option>
+                <option value="3">Psiquiátrico</option>
+                <option value="4">Mal súbito</option>
+                <option value="5">PCR</option>
+                <option value="6">Afogamento</option>
+                <option value="7">Hiper ou hipoglicemia</option>
+              </select>
+              <label>Emergência</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <select>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="1">Moto x Carro</option>
+                <option value="2">Moto x Moto</option>
+                <option value="3">Carro x Carro</option>
+                <option value="4">Atropelamento</option>
+                <option value="5">Capotamento</option>
+                <option value="6">Queda de moto</option>
+              </select>
+              <label>Acidente de trânsito</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <select>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="1">Queda de Nivel</option>
+                <option value="2">Queda de própria altura</option>
+                <option value="3">FAF</option>
+                <option value="4">FAB</option>
+                <option value="5">Acidente de ofídico</option>
+              </select>
+              <label>Trauma</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <select>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="1">1ºGrau</option>
+                <option value="2">2ºGrau</option>
+                <option value="3">3ºGrau</option>
+                <option value="4">Nenhuma</option>
+              </select>
+              <label>Queimaduras</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <select>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="1">Livre</option>
+                <option value="2">Obstrução</option>
+                <option value="3">Broncoaspiração</option>
+              </select>
+              <label>Vias aéreas</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <select>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="1">Espontânea</option>
+                <option value="2">Gasping</option>
+                <option value="3">Dispnéia</option>
+                <option value="4">Bradipnéia</option>
+                <option value="5">Parada respiratória</option>
+              </select>
+              <label>Respiração</label>
+            </div>
+
+            <div class="input-field col s12 m12">
+              <div class="input-field">
+                <textarea id="" name="spoVentilacaoSamu" type="text" class="materialize-textarea" data-length="20" required></textarea>
+                <label for="spoVentilacaoSamu">SPO____%:</label>
+              </div>
+              <select>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="1">Cianose</option>
+                <option value="2">Palidez</option>
+                <option value="3">Agitação</option>
+              </select>
+              <label>Ventilação</label>
+            </div>
+
+
+           <div class="input-field col s12 m12">
+                <select>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="1"> > 2 Segundos </option>
+                    <option value="2"> < 2 Segundos </option>
+                    <option value="0"> Nenhuma das alternativas</option>
+
+                </select>
+            <label>Enchiment. Capilar</label>
+          </div>
+
+          </div>
+
+          <div class="step-actions">
+            <button class="waves-effect waves-dark btn next-step">Continuar</button>
+          </div>
+        </div>
+      </li>
+      <!-- Segunda sessão -->
+      <li class="step ">
+        <div class="step-title waves-effect">Circulação</div>
+        <div class="step-content">
+          <div class="row">
+              <div class="input-field col s12 m4">
+                   <select>
+                       <option value="" disabled selected>Selecione uma opção</option>
+                       <option value="1">Corada</option>
+                       <option value="2">Ictérica</option>
+                       <option value="3">Palidez</option>
+                       <option value="4">Sudoreica</option>
+                       <option value="5">Cianose</option>
+                       <option value="6">Fria</option>
+                   </select>
+               <label>Pele</label>
+             </div>
+
+             <div class="input-field col s12 m4">
+                  <select>
+                      <option value="" disabled selected>Selecione uma opção</option>
+                      <option value="1">Preservada</option>
+                      <option value="2">Diminuída</option>
+                  </select>
+              <label>Perfusão</label>
+            </div>
+
+            <div class="input-field col s12 m4">
+                 <select>
+                     <option value="" disabled selected>Selecione uma opção</option>
+                     <option value="1">Regular</option>
+                     <option value="2">Irregular</option>
+                     <option value="3">Fraco</option>
+                     <option value="4">Forte</option>
+                     <option value="5">Ausente</option>
+                 </select>
+             <label>Pulso</label>
+           </div>
+         </div>
+
+
+              <div class="step-actions">
+                <button class="waves-effect waves-dark btn next-step">Continuar</button>
+                <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
+              </div>
+
+          </li>
+          <!-- Terceira sessão -->
+          <li class="step">
+            <div class="step-title waves-effect">Avaliação Neurologica : Escala de coma de Glasgow</div>
+            <div class="step-content">
+              <div class="row">
+
+               <div class="input-field col s12 m4">
+                     <select id="aerturaOcular">
+                         <option value="" disabled selected>Selecione uma opção</option>
+                         <option value="4">[4]Espontânea</option>
+                         <option value="3">[3]Desconexo</option>
+                         <option value="2">[2]A dor</option>
+                         <option value="1">[1]Ausente</option>
+                     </select>
+                 <label>Abertura ocular</label>
+               </div>
+
+               <div class="input-field col s12 m4">
+                     <select id="verbalSamu">
+                         <option value="" disabled selected>Selecione uma opção</option>
+                         <option value="5">[5]Orientado</option>
+                         <option value="4">[4]Confuso</option>
+                         <option value="3">[3]Desconexo</option>
+                         <option value="2">[2]Incompreensível</option>
+                         <option value="1">[1]Ausente</option>
+                     </select>
+                 <label>Resposta verbal</label>
+               </div>
+
+               <div class="input-field col s12 m4">
+                     <select id="respostaMotora">
+                         <option value="" disabled selected>Selecione uma opção</option>
+                         <option value="6"> [6]Obedece comando</option>
+                         <option value="5">[5]Responde a dor</option>
+                         <option value="4">[4]Retirada à dor</option>
+                         <option value="3">[3]Reflexão anormal</option>
+                         <option value="2">[2]Extensão anormal</option>
+                         <option value="1">[1]Ausente</option>
+                     </select>
+                 <label>Resposta motora</label>
+               </div>
+
+               <div class="input-field col s12 m4">
+                     <select>
+                         <option value="" disabled selected>Selecione uma opção</option>
+                         <option value="1">Isocóricas</option>
+                         <option value="2">Anisocóricas</option>
+                         <option value="3">Midriáticas</option>
+                         <option value="4">Mióticas</option>
+                     </select>
+                 <label>pupila</label>
+               </div>
+             </div>
+                <p></p>
+               <hr>
+
+                 <p>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Agitação</span>
+                   </label>
+
+                   <label>
+                     <input type="checkbox" />
+                     <span>Sonolência</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Confusão</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Convulsão</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Otorragia</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Hematoma Orbital</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>D</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>E</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Rigidez de Nuca</span>
+                   </label>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Parestesia</span>
+                   </label>
+                </p>
+              <hr>
+
+
+              <div class="step-actions">
+                <button class="waves-effect waves-dark btn next-step">Continuar</button>
+                <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
+              </div>
+            </div>
+          </li>
+          <!-- Quarta sessão -->
+          <li class="step ">
+            <div class="step-title waves-effect">Encaminhamento</div>
+            <div class="step-content">
+              <div class="row">
+
+                <div class="input-field col s12 m6">
+                  <textarea id="" name="unidadeDeSaudeSamu" type="text" class="materialize-textarea" data-length="120" required></textarea>
+                  <label for="unidadeDeSaudeSamu">Unidade de saúde :</label>
+                </div>
+
+
+                <div class="switch">
+                  <label>
+                    Não
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Sim
+                    <span> A pessoa se recusou a receber atendimento ?</span>
+                  </label>
+                </div>
+
+
+                <div class="input-field col s12">
+                  <textarea id="" name="relatorioOcorrenciaSamu" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="relatorioOcorrenciaSamu">Relatorio da Ocorrência :</label>
+                </div>
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="PAmmHgSamu" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="PAmmHgSamu">PA:  mmHg</label>
+                </div>
+
+
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="TC" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="TC">T:  ºC</label>
+                </div>
+
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="FC" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="FC">FC:  BPM</label>
+                </div>
+
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="fr" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="fr">FR:   IPM</label>
+                </div>
+              </div>
+
+              <p> <hr>
+                <h5>Remoção ( Transporte ): </h5>
+                <div class="input-field col s12 m6">
+                  <textarea id="" name="remocaoTransporteDe" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="remocaoTransporteDe">De: </label>
+                </div>
+
+                  <div class="input-field col s12 m6">
+                    <textarea id="" name="remocaoTransportePara" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                    <label for="remocaoTransportePara">Para: </label>
+                  </div>
+
+           </p>
+              <p>
+                <div class="input-field col s12 m6">
+                  <textarea id="" name="guarnicaoAtt" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="guarnicaoAtt">Guarnição de atendimento </label>
+                </div></p>
+
+              </div>
+              <div class="step-actions">
+                <a class="waves-effect waves-dark btn modal-trigger" href="#modal_confirmacao">Enviar</a>
+                <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Modal Structure -->
+      <div id="modal_confirmacao" class="modal center">
+        <div class="modal-content">
+          <h4>Deseja finalizar a visita?</h4>
+        </div>
+        <a href="upload.html" class="waves-effect waves-dark btn center">Sim</a>
+        <a href="#!" class="modal-close waves-effect waves-light red btn center">Não</a>
+      </div>
+      <!-- sideNav -->
+      <div class="sidenav2" id="sidenav">
+          <ul>
+            <li>
+                <a href="logged.html">
+                    <i class="material-icons">home</i>
+                    <span>Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons">search</i>
+                    <span>Busca</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="formularioSamu.html">
+                    <i class="material-icons">assignment
+</i>
+                    <span>Formulario Samu</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons ">assignment
+</i>
+                    <span>Formulario Setrat</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons">assignment
+</i>
+                    <span>Formulario Policia Militar</span>
+                </a>
+            </li>
+              <li>
+                  <a href="#" class="dropdown-trigger" data-target='dropdown'>
+                      <img class="circle" src="imgs/nature.jpeg">
+                  </a>
+                  <ul id='dropdown' class='dropdown-content #fafafa grey lighten-5'>
+                      <li><a href="edit_profile.html">Editar Perfil</a></li>
+                      <li><a href="index.html">Sair</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <a href="#" id="sidenav-btn" class="sidenav-btn"><<</a>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+      <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+      <script src="./js/libs/materialize-stepper.min.js"></script>
+      <script src="./js/mammo.js"></script>
+      <script src="./js/sidenav.js"></script>
+    </body>
+    </html>
