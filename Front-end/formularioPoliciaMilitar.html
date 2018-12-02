@@ -21,7 +21,7 @@
   </div>
   <div class="container">
     <ul class="stepper linear">
-      <li class="step active">
+      <li class="step ">
         <div class="step-title waves-effect">Dados da ocorrência</div>
         <div class="step-content">
           <div class="row">
@@ -63,26 +63,82 @@
 
       </li>
 
-      <li class="step ">
-          <div class="step-title waves-effect">Localizacao do acidente</div>
+      <li class="step active">
+          <div class="step-title waves-effect">Localizacao provável da ocorrência</div>
           <div class="step-content">
             <div class="row">
 
-                <div class="input-field col s12 m3">
-                    <input id="Bairro" type="text">
-                    <label for="Bairro">Bairro</label>
-                </div>
+                <div class="input-field col s3">
+                    <select>
+                       <option value="" disabled selected>Selecione o estado</option>
+                       <option value="MT">MT</option>
+                     </select>
+                   <label>Estado</label>
+                 </div>
 
-                <div class="input-field col s12 m3">
-                    <input id="Complamento" type="text">
-                    <label for="Referencia">Bairro</label>
-                </div>
+                <div class="input-field col s9">
+                    <select>
+                       <option value="" disabled selected>Selecione o município</option>
+                       <option value="Rondonópolis">Rondonópolis</option>
+                     </select>
+                   <label>Município</label>
+                 </div>
+
+                <div class="input-field col s9">
+                    <select>
+                       <option value="" disabled selected>Selecione o bairro</option>
+                       <option value="Centro">Centro</option>
+                     </select>
+                   <label>Bairro</label>
+                 </div>
+
+                 <div class="input-field col s3">
+                    <select>
+                       <option value="" disabled selected>Selecione o tipo</option>
+                       <option value="Casa">Casa</option>
+                     </select>
+                   <label>Tipo</label>
+                 </div>
+
+                 <div class="input-field col s4">
+                        <input id="numero" type="text">
+                        <label for="numero">Número</label>
+                    </div>
+                 <div class="input-field col s4">
+                        <input id="lote" type="text">
+                        <label for="lote">Lote</label>
+                    </div>
+                 <div class="input-field col s4">
+                        <input id="cep" type="text">
+                        <label for="cep">CEP</label>
+                    </div>
+                 <div class="input-field col s6">
+                        <input id="complemtento" type="text">
+                        <label for="complemtento">Complemtento</label>
+                    </div>
+                 <div class="input-field col s6">
+                        <input id="referência" type="text">
+                        <label for="referência">Referência</label>
+                    </div>
+
+                    <div class="col s4 center">
+                        <a id="geo" class="btn waves-effect">GEO</a>
+                        <p id="demo"></p>
+                    </div>
+                    <div  class="input-field col s4">
+                        <input placeholder="" id="latitude" type="text">
+                        <label for="latitude">Latitude</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="" id="longitude" type="text">
+                        <label for="longitude">longitude</label>
+                    </div>
 
             </div>
 
                 <div class="step-actions">
-                  <button class="waves-effect waves-dark btn next-step">Continuar</button>
-                  <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
+                    <a id="enviar" class="waves-effect waves-dark btn modal-trigger" href="#modal_confirmacao">Enviar</a>
+                    <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
                 </div>
 
      </li>
@@ -140,5 +196,7 @@
       <script src="./js/libs/materialize-stepper.min.js"></script>
       <script src="./js/mammo.js"></script>
       <script src="./js/sidenav.js"></script>
+      <script src="./js/policia.js"></script>
     </body>
     </html>
+ 
