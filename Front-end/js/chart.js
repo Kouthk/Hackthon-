@@ -5,7 +5,7 @@ var myPieChart = new Chart(ctx,{
     type: 'pie',
     data: {
         datasets: [{
-            data: [valor],
+            data: [30,25,45],
         backgroundColor: [
             'Red',
             'Yellow',
