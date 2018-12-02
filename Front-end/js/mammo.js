@@ -20,7 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.datepicker');
-  var instances = M.Datepicker.init(elems);
+  var instances = M.Datepicker.init(elems,{i18n:{
+      monthsShort:[
+        'Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'
+      ],
+      weekdaysShort:[
+        'Seg','Ter','Qua','Qui','Sex','Sab','Dom'
+      ]
+    }});
 });
 
 document.addEventListener('DOMContentLoaded', function() {
