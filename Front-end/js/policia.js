@@ -4,12 +4,31 @@ btnEnviar.addEventListener('click', () => {
     gravar();
 });
 
-function gravar() {
-    let nomeBairro = document.querySelector('#Bairro');
-    let val = document.querySelector('#Complemento');
-    localStorage.bairro = nomeBairro.value; 
-    localStorage.num = val.value; 
+function persistir() {
+    geo.latitude.push(latitude.value);
+    geo.longitude.push(longitude.value);
+    localStorage.geo = JSON.stringify(geo);
 }
+
+function gravar() {  
+    let latitude = document.querySelector('#latitude');
+    let longitude = document.querySelector('#longitude');
+
+    if(localStorage.geo == undefined){
+        geo = {
+            latitude: [],
+            longitude: []
+        }
+        persistir();
+ 
+    } else {
+        geo = JSON.parse(localStorage.geo);
+        persistir(); 
+    }
+}
+
+
+
 
 let btn = document.querySelector("#geo").addEventListener('click', () => {
     getLocation();
