@@ -228,7 +228,7 @@
               <div class="row">
 
                <div class="input-field col s12 m4">
-                     <select>
+                     <select id="aerturaOcular">
                          <option value="" disabled selected>Selecione uma opção</option>
                          <option value="4">[4]Espontânea</option>
                          <option value="3">[3]Desconexo</option>
@@ -239,7 +239,7 @@
                </div>
 
                <div class="input-field col s12 m4">
-                     <select>
+                     <select id="verbalSamu">
                          <option value="" disabled selected>Selecione uma opção</option>
                          <option value="5">[5]Orientado</option>
                          <option value="4">[4]Confuso</option>
@@ -251,9 +251,9 @@
                </div>
 
                <div class="input-field col s12 m4">
-                     <select>
+                     <select id="respostaMotora">
                          <option value="" disabled selected>Selecione uma opção</option>
-                         <option value="">[6]Obedece comando</option>
+                         <option value="6"> [6]Obedece comando</option>
                          <option value="5">[5]Responde a dor</option>
                          <option value="4">[4]Retirada à dor</option>
                          <option value="3">[3]Reflexão anormal</option>
@@ -280,7 +280,7 @@
                  <p>
                    <label>
                      <input type="checkbox" />
-                     <span> <- Agitação</span>
+                     <span>Agitação</span>
                    </label>
 
                    <label>
@@ -319,9 +319,7 @@
                      <input type="checkbox" />
                      <span>Parestesia</span>
                    </label>
-
                 </p>
-
               <hr>
 
 
@@ -333,386 +331,72 @@
           </li>
           <!-- Quarta sessão -->
           <li class="step ">
-            <div class="step-title waves-effect"></div>
+            <div class="step-title waves-effect">Encaminhamento</div>
             <div class="step-content">
               <div class="row">
-                <div class="row hide-on-small-only">
-                  <div class="col m6 center">
-                    <h2>Mama Esquerda</h2>
-                  </div>
-                  <div class="col m6 center">
-                    <h2>Mama Direita</h2>
-                  </div>
-                </div>
-                <div class="col s12 m6 ">
-                  <div class="center hide-on-med-and-up ">
-                    <h2>Mama Esquerda</h2>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Assimetría focal</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Assimetría difusa</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Área densa</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Distorção focal</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Distorção ductal isolada</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Normais</option>
-                      <option value="2">Não visibilizados</option>
-                      <option value="3">Aumentados</option>
-                      <option value="4">Densos</option>
-                      <option value="5">Confluentes</option>
-                    </select>
-                    <label>Linfonodos axilares</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Retração da pele</option>
-                      <option value="2">Retração da papila</option>
-                      <option value="3">Espessamento da pele</option>
-                      <option value="4">Espessamento trabecular</option>
-                      <option value="5">Adenopatia axilar</option>
-                      <option value="6">Distribuição arquitetural</option>
-                      <option value="7">Calcificações</option>
-                    </select>
-                    <label>Achados associados</label>
-                  </div>
-                  <div class="input-field">
-                    <input id="outros_achados_esquerda" type="text" class="validate" required data-length="120">
-                    <label for="outros_achados_esquerda">Outros achados</label>
-                  </div>
-                </div>
-                <div class="col s12 m6 ">
-                  <div class="center hide-on-med-and-up ">
-                    <h2>Mama Direita</h2>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Assimetría focal</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Assimetría difusa</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Área densa</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Distorção focal</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">QSL - Quadrante superior lateral</option>
-                      <option value="2">QIL - Quadrante inferior lateral</option>
-                      <option value="3">QSM - Quadrante superior medial</option>
-                      <option value="4">QIM - Quadrante inferior medial</option>
-                      <option value="5">UQlat - União dos quadrantes laterais</option>
-                      <option value="6">UQsup - União dos quadrantes superiores</option>
-                      <option value="7">UQmed - União dos quadrantes mediais</option>
-                      <option value="8">UQinfo - União dos quadrantes inferiores</option>
-                      <option value="9">PA - Prolongamento axilar</option>
-                    </select>
-                    <label>Distorção ductal isolada</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Normais</option>
-                      <option value="2">Não visibilizados</option>
-                      <option value="3">Aumentados</option>
-                      <option value="4">Densos</option>
-                      <option value="5">Confluentes</option>
-                    </select>
-                    <label>Linfonodos axilares</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Retração da pele</option>
-                      <option value="2">Retração da papila</option>
-                      <option value="3">Espessamento da pele</option>
-                      <option value="4">Espessamento trabecular</option>
-                      <option value="5">Adenopatia axilar</option>
-                      <option value="6">Distribuição arquitetural</option>
-                      <option value="7">Calcificações</option>
-                    </select>
-                    <label>Achados associados</label>
-                  </div>
-                  <div class="input-field">
-                    <input id="outros_achados_esquerda" type="text" class="validate" required data-length="120">
-                    <label for="outros_achados_esquerda">Outros achados</label>
-                  </div>
-                </div>
-              </div>
-              <div class="step-actions">
-                <button class="waves-effect waves-dark btn next-step">Continuar</button>
-                <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
-              </div>
-            </div>
-          </li>
-          <!-- quinta sessão -->
-          <li class="step ">
-            <div class="step-title waves-effect">Diagnóstico</div>
-            <div class="step-content">
-              <div class="row">
-                <div class="row hide-on-small-only">
-                  <div class="col m6 center ">
-                    <h2>Mama Esquerda</h2>
-                  </div>
-                  <div class="col m6 center">
-                    <h2>Mama Direita</h2>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <div class="center hide-on-med-and-up">
-                    <h2>Mama Esquerda</h2>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Categoria 0</option>
-                      <option value="2">Categoria 1</option>
-                      <option value="3">Categoria 2</option>
-                      <option value="4">Categoria 3</option>
-                      <option value="5">Categoria 4</option>
-                      <option value="6">Categoria 5</option>
-                      <option value="7">Categoria 6</option>
-                    </select>
-                    <label>Diagnóstico (BI-RADS)</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Categoria 0: Complementação com ultrassonografia</option>
-                      <option value="2">Categoria 1: Mamografia a cada 2 anos</option>
-                      <option value="3">Categoria 2: Mamografia a cada 2 anos</option>
-                      <option value="4">Categoria 3: Controle radiológico em 6 meses. Controle radiológico em 1 ano</option>
-                      <option value="5">Categoria 4: Hitopatológico</option>
-                      <option value="6">Categoria 5: Hitopatológico</option>
-                      <option value="7">Categoria 6: Terapêutica específica</option>
-                    </select>
-                    <label>Recomendação de conduta</label>
-                  </div>
-                </div>
-                <div class="col s12 m6">
-                  <div class="center hide-on-med-and-up">
-                    <h2>Mama Direita</h2>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Categoria 0</option>
-                      <option value="2">Categoria 1</option>
-                      <option value="3">Categoria 2</option>
-                      <option value="4">Categoria 3</option>
-                      <option value="5">Categoria 4</option>
-                      <option value="6">Categoria 5</option>
-                      <option value="7">Categoria 6</option>
-                    </select>
-                    <label>Diagnóstico (BI-RADS)</label>
-                  </div>
-                  <div class="input-field">
-                    <select>
-                      <option value="" disabled selected>Nenhuma</option>
-                      <option value="1">Categoria 0: Complementação com ultrassonografia</option>
-                      <option value="2">Categoria 1: Mamografia a cada 2 anos</option>
-                      <option value="3">Categoria 2: Mamografia a cada 2 anos</option>
-                      <option value="4">Categoria 3: Controle radiológico em 6 meses. Controle radiológico em 1 ano</option>
-                      <option value="5">Categoria 4: Hitopatológico</option>
-                      <option value="6">Categoria 5: Hitopatológico</option>
-                      <option value="7">Categoria 6: Terapêutica específica</option>
-                    </select>
-                    <label>Recomendação de conduta</label>
-                  </div>
-                </div>
-              </div>
-              <div class="step-actions">
-                <button class="waves-effect waves-dark btn next-step">Continuar</button>
-                <button class="waves-effect waves-dark btn-flat previous-step">Voltar</button>
-              </div>
-            </div>
-          </li>
-          <li class="step ">
-            <div class="step-title waves-effect">Upload de imagens</div>
-            <div class="step-content">
-              <div class="row">
-                <div class="input-field col s12 m12">
-                  <select>
-                    <option value="" disabled selected>Escolha uma opção</option>
-                    <option value="1">Frontal</option>
-                    <option value="2">Lateral</option>
-                  </select>
-                  <label>Posição</label>
-                </div>
-                <div class="input-field col s12 m12">
-                  <textarea id="observacoes" name="observacoes" type="text" class="materialize-textarea" ></textarea>
-                  <label for="observacoes">Observações</label>
-                </div>
-                <div class="file-field input-field col s12 m12">
-                  <div class="btn">
-                    <span>File</span>
-                    <input type="file" multiple required>
-                  </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload um ou mais arquivos">
-                  </div>
+
+                <div class="input-field col s12 m6">
+                  <textarea id="" name="unidadeDeSaudeSamu" type="text" class="materialize-textarea" data-length="120" required></textarea>
+                  <label for="unidadeDeSaudeSamu">Unidade de saúde :</label>
                 </div>
 
-                <div class="action-btn right">
-                  <a class="btn-floating btn-large red">
-                    <i class="large material-icons">check</i>
-                  </a>
-                </div>
-                <table class="centered">
-                  <thead>
-                    <tr>
-                      <th>Posição</th>
-                      <th>Arquivos</th>
-                      <th></th>
-                    </tr>
-                  </thead>
 
-                  <tbody>
-                    <tr>
-                      <td>Frontal</td>
-                      <td>87</td>
-                      <td>
-                        <a href=""><i class="material-icons">clear</i></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Lateral</td>
-                      <td>76</td>
-                      <td>
-                        <a href=""><i class="material-icons">clear</i></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Lateral</td>
-                      <td>70</td>
-                      <td>
-                        <a href=""><i class="material-icons">clear</i></a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="switch">
+                  <label>
+                    Não
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    Sim
+                    <span> A pessoa se recusou a receber atendimento ?</span>
+                  </label>
+                </div>
+
+
+                <div class="input-field col s12">
+                  <textarea id="" name="relatorioOcorrenciaSamu" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="relatorioOcorrenciaSamu">Relatorio da Ocorrência :</label>
+                </div>
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="PAmmHgSamu" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="PAmmHgSamu">PA:  mmHg</label>
+                </div>
+
+
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="TC" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="TC">T:  ºC</label>
+                </div>
+
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="FC" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="FC">FC:  BPM</label>
+                </div>
+
+                <div class="input-field col s12 m3">
+                  <textarea id="" name="fr" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="fr">FR:   IPM</label>
+                </div>
+              </div>
+
+              <p> <hr>
+                <h5>Remoção ( Transporte ): </h5>
+                <div class="input-field col s12 m6">
+                  <textarea id="" name="remocaoTransporteDe" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="remocaoTransporteDe">De: </label>
+                </div>
+
+                  <div class="input-field col s12 m6">
+                    <textarea id="" name="remocaoTransportePara" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                    <label for="remocaoTransportePara">Para: </label>
+                  </div>
+
+           </p>
+              <p>
+                <div class="input-field col s12 m6">
+                  <textarea id="" name="guarnicaoAtt" type="text" class="materialize-textarea" data-length="500" required></textarea>
+                  <label for="guarnicaoAtt">Guarnição de atendimento </label>
+                </div></p>
+
               </div>
               <div class="step-actions">
                 <a class="waves-effect waves-dark btn modal-trigger" href="#modal_confirmacao">Enviar</a>
@@ -732,26 +416,39 @@
       </div>
       <!-- sideNav -->
       <div class="sidenav2" id="sidenav">
-        <ul>
+          <ul>
             <li>
                 <a href="logged.html">
                     <i class="material-icons">home</i>
                     <span>Início</span>
                 </a>
             </li>
+            <li>
+                <a href="#">
+                    <i class="material-icons">search</i>
+                    <span>Busca</span>
+                </a>
+            </li>
 
-
+            <li>
                 <a href="formularioSamu.html">
                     <i class="material-icons">assignment
-    </i>
+</i>
                     <span>Formulario Samu</span>
                 </a>
             </li>
             <li>
-                <a href="formularioPoliciaMilitar.html">
+                <a href="#">
+                    <i class="material-icons ">assignment
+</i>
+                    <span>Formulario Setrat</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <i class="material-icons">assignment
-    </i>
-                    <span>Formulario Policia</span>
+</i>
+                    <span>Formulario Policia Militar</span>
                 </a>
             </li>
               <li>

@@ -2,26 +2,26 @@
 document.addEventListener('DOMContentLoaded', function() {
     let elems = document.querySelectorAll('.dropdown-trigger');
     let options = {};
-    let instances = M.Dropdown.init(elems, options);
+    let instances = M.Dropdown.init(elems);
 });
 
-function carregaSidenav(){	
+function carregaSidenav(){
 	if(localStorage.getItem("menuState") == 'min'){
 		document.querySelector('body').classList.add('sidenavmin');
 		localStorage.setItem("menuState", "min");
-	}else{	
+	}else{
 		document.querySelector('body').classList.remove('sidenavmin');
-		localStorage.setItem("menuState", "max");	
+		localStorage.setItem("menuState", "max");
 	}
 };
 
-function mudaSidenav(){	
+function mudaSidenav(){
 	if(localStorage.getItem("menuState") == 'min'){
 		document.querySelector('body').classList.remove('sidenavmin');
 		localStorage.setItem("menuState", "max");
-	}else{	
+	}else{
 		document.querySelector('body').classList.add('sidenavmin');
-		localStorage.setItem("menuState", "min");	
+		localStorage.setItem("menuState", "min");
 	}
 };
 
