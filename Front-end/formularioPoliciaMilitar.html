@@ -19,6 +19,7 @@
   <div class="center">
     <h1>Relatório de Ocorrência</h1>
   </div>
+  <form action = "MostrarformularioPoliciaMilitar.html" method="get">
   <div class="container">
     <ul class="stepper linear">
       <li class="step ">
@@ -44,7 +45,7 @@
                 <label for="dataDoFato">Data do fato</label>
             </div>
             <div class="input-field col s12 m3">
-                <input id="horaDoFato" type="text" class="timepicker">
+                <input id="horaDoFato"name="horaDoFato"  type="text" class="timepicker">
                 <label for="horaDoFato">Hora do fato</label>
             </div>
 
@@ -149,9 +150,10 @@
         <div class="modal-content">
           <h4>Deseja finalizar a visita?</h4>
         </div>
-        <a href="upload.html" class="waves-effect waves-dark btn center">Sim</a>
+        <button class="waves-effect waves-dark btn center" type="submit"> Sim</button>
         <a href="#!" class="modal-close waves-effect waves-light red btn center">Não</a>
       </div>
+</form>
       <!-- sideNav -->
       <div class="sidenav2" id="sidenav">
         <ul>
@@ -199,4 +201,3 @@
       <script src="./js/policia.js"></script>
     </body>
     </html>
- 
