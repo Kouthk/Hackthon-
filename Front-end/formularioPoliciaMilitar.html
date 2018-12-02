@@ -22,21 +22,21 @@
   <form action = "MostrarformularioPoliciaMilitar.html" method="get">
   <div class="container">
     <ul class="stepper linear">
-      <li class="step ">
+      <li class="step active">
         <div class="step-title waves-effect">Dados da ocorrência</div>
         <div class="step-content">
           <div class="row">
               <div class="input-field col s12 m6">
-                   <select>
+                   <select id="localDoFato">
                       <option value="" disabled selected>Selecione o ocorrência</option>
-                      <option value="1">Via Pública</option>
-                      <option value="2">Garagem Coletiva de prédio</option>
-                      <option value="3">Estacionamento com vigilância</option>
-                      <option value="4">Estacionamento público</option>
-                      <option value="5">Estacionamento particular</option>
-                      <option value="6">Garagem ou abrigo de residência</option>
-                      <option value="7">Veículo em movimento</option>
-                      <option value="8">Outros</option>
+                      <option value="Via Pública">Via Pública</option>
+                      <option value="Garagem Coletiva de prédio">Garagem Coletiva de prédio</option>
+                      <option value="Estacionamento com vigilância">Estacionamento com vigilância</option>
+                      <option value="Estacionamento público">Estacionamento público</option>
+                      <option value="Estacionamento particular">Estacionamento particular</option>
+                      <option value="Garagem ou abrigo de residência">Garagem ou abrigo de residência</option>
+                      <option value="Veículo em movimento">Veículo em movimento</option>
+                      <option value="Outros">Outros</option>
                     </select>
                   <label>Local do fato</label>
                 </div>
@@ -64,20 +64,22 @@
 
       </li>
 
-      <li class="step active">
+      <li class="step ">
           <div class="step-title waves-effect">Localizacao provável da ocorrência</div>
           <div class="step-content">
             <div class="row">
 
-                <div class="input-field col s3">
-                    <select>
+                <div class="input-field col s12 m4">
+                    <select id="leg">
                        <option value="" disabled selected>Selecione o estado</option>
                        <option value="MT">MT</option>
+                       <option value="GO">GO</option>
+                       <option value="PR">PR</option>
                      </select>
                    <label>Estado</label>
                  </div>
 
-                <div class="input-field col s9">
+                <div class="input-field col s12 m8">
                     <select>
                        <option value="" disabled selected>Selecione o município</option>
                        <option value="Rondonópolis">Rondonópolis</option>
@@ -85,7 +87,7 @@
                    <label>Município</label>
                  </div>
 
-                <div class="input-field col s9">
+                <div class="input-field col s12 M9">
                     <select>
                        <option value="" disabled selected>Selecione o bairro</option>
                        <option value="Centro">Centro</option>
@@ -93,7 +95,7 @@
                    <label>Bairro</label>
                  </div>
 
-                 <div class="input-field col s3">
+                 <div class="input-field col s12 m4">
                     <select>
                        <option value="" disabled selected>Selecione o tipo</option>
                        <option value="Casa">Casa</option>
@@ -101,36 +103,35 @@
                    <label>Tipo</label>
                  </div>
 
-                 <div class="input-field col s4">
+                 <div class="input-field col s12 m4">
                         <input id="numero" type="text">
                         <label for="numero">Número</label>
                     </div>
-                 <div class="input-field col s4">
+                 <div class="input-field col s12 m4">
                         <input id="lote" type="text">
                         <label for="lote">Lote</label>
                     </div>
-                 <div class="input-field col s4">
+                 <div class="input-field col s12 m6">
                         <input id="cep" type="text">
                         <label for="cep">CEP</label>
                     </div>
-                 <div class="input-field col s6">
+                 <div class="input-field col s12 m6">
                         <input id="complemtento" type="text">
                         <label for="complemtento">Complemtento</label>
                     </div>
-                 <div class="input-field col s6">
+                 <div class="input-field col s12 ">
                         <input id="referência" type="text">
                         <label for="referência">Referência</label>
                     </div>
-
-                    <div class="col s4 center">
-                        <a id="geo" class="btn waves-effect">GEO</a>
-                        <p id="demo"></p>
-                    </div>
-                    <div  class="input-field col s4">
+                    <div class="col s12  m4 center">
+                            <a id="geo" class="btn waves-effect">Geolocalização</a>
+                            <p id="demo"></p>
+                        </div>
+                    <div  class="input-field col s12 m4">
                         <input placeholder="" id="latitude" type="text">
                         <label for="latitude">Latitude</label>
                     </div>
-                    <div class="input-field col s4">
+                    <div class="input-field col s12 m4">
                         <input placeholder="" id="longitude" type="text">
                         <label for="longitude">longitude</label>
                     </div>
